@@ -1,0 +1,37 @@
+additional_node_types: false
+additional_patterns: false
+additional_relationship_types: false
+node_types:
+- additional_properties: false
+  description: ''
+  label: Person
+  properties:
+  - description: ''
+    name: name
+    required: false
+    type: STRING
+  - description: ''
+    name: birthDate
+    required: false
+    type: DATE
+- additional_properties: false
+  description: ''
+  label: Company
+  properties:
+  - description: ''
+    name: name
+    required: false
+    type: STRING
+  - description: ''
+    name: address
+    required: false
+    type: STRING
+patterns:
+- - Person
+  - WORKS_FOR
+  - Company
+relationship_types:
+- additional_properties: true
+  description: ''
+  label: WORKS_FOR
+  properties: []
