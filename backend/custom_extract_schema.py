@@ -7,7 +7,7 @@ from neo4j_graphrag.experimental.components.schema import SchemaFromTextExtracto
 
 
 # Minimal-LLM -> Fireworks LLM
-# Diese Klasse ist eine Wrapper-Klasse für die Fireworks LLM API (kostenlose Version)
+# This class is a wrapper class for the Fireworks LLM API (free version)
 class FireworksLLM:
     def __init__(self, model_name: str, model_params: dict = None, api_key: str = None):
         self.base_url = "https://api.fireworks.ai/inference/v1"
@@ -17,7 +17,7 @@ class FireworksLLM:
         if not self.api_key:
             raise ValueError("FIREWORKS_API_KEY is not set.")
 
-    # Wrapper-Klasse für erwartete Struktur mit `.content`
+    # Wrapper class for expected structure with `.content`
     class _ResponseWrapper:
         def __init__(self, content: str):
             self.content = content
