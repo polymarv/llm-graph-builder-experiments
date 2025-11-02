@@ -175,3 +175,9 @@ newenv
 files
 startupbackend.sh
 startupfrontend.sh
+
+# Backend data and runs
+/backend/data/runs/
+/backend/data/snapshots/
+/backend/test_wdqs*
+/backend/test_fetch*
